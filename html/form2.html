@@ -1,0 +1,40 @@
+<!doctype html><html><head><meta charset="utf-8">
+</head>
+
+<body>
+<form id="form2" name="form2">
+  <fieldset>
+    <legend>Datos Basicos</legend>
+    <p>Nombre del Producto<input type="text" name="name" id="name" /></p>
+    <p>Descripcion</p>
+    <p><textarea name="descrip" id="descrip" cols="45" rows="5" ></textarea></p>
+    <p>Foto: </p>
+    <p><input type="button" name="foto" id="foto" value="Examinar..." > No se ha seleccionado ningun archivo</p>
+    <p><input type="checkbox" name="añadirinfo" id="añadirinfo">
+    <label for="añadirinfo">Añadir informacion personal</label></p>
+    </fieldset>
+    <fieldset>
+    <legend>Datos Economicos</legend>
+    <p><label for="precio">Precio: </label>
+      <input type="Number" name="precio" id="precio" > <label for="moneda">$</label><label for="espacio">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+      <label for="imp">Impuestos: </label>
+      <select name="imp" id="imp" >
+      <option value="4">4%</option>
+      <option value="6">6%</option>
+      <option value="12">12%</option>
+      <option value="15">15%</option>
+      </select></p>
+    <p>Promocion </p>
+    <p><input type="radio" name="radio" id="ning" value="ning">
+      <label for="ning">Ninguno</label></p>
+    <p><input type="radio" name="radio" id="transp" value="transp">
+      <label for="transp">Transporte Gratuito</label></p>
+    <p><input type="radio" name="radio" id="desc" value="desc">
+      <label for="desc">Descuento 5%</label></p>
+  </fieldset>
+  <p><input type="button" name="guardar" id="guardar" value="Guardar Cambios">
+    <input type="button" name="borrar" id="borrar" value="Borrar los datos introducidos" onclick="borrarform()"></p>
+</form>
+<script src="../js/form1.js"></script>
+</body>
+</html>

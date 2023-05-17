@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset="utf-8">
+</head>
+
+<body>
+<form name="FormContacto" onsubmit="return validar();">
+  <label>
+  <div>Contacto</div>
+  </label>
+  <p><label>Correo Electronico</label></p>
+  <p><input id="correo" name="correo" type="text" placeholder="usuario@gmail.com"></p>
+  <p><label>Fecha de Nacimiento </label></p>
+  <p><input name="fecha" type="date" placeholder="DD/MM/AAAA"></p>
+  <p><label>Telefono</label></p>
+  <p><input id="telefono" name="telefono" type="text" placeholder="Telefono"></p>
+  <input id="enviar" type="button" name="Enviar" value="enviar" onclick="return validar();">
+</form>
+<script src="../js/form1.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html><html><head><meta charset="utf-8">
+</head>
+
+<body>
+<form id="form1" name="form1">
+  <fieldset>
+    <legend>DIRECCION DE ENVIO</legend>
+    <p><label for="calleP">Calle Principal</label> 
+      <input type="text" name="calleP" id="calleP"/></p>
+    <p><label for="trans">Transversal</label> 
+      <input type="text" name="trans" id="trans" /></p>
+    <p><input type="checkbox" name="prop" id="prop" onclick="Verificacion()" />
+      <label for="prop">Entrega al propietario.</label></p>
+    <p><input type="checkbox" name="infoter" id="infoter" onclick="Mostrar()" /><label for="infoter">Entrega a un tercero.</label></p>
+    <p><label for="canton">Cantones: </label>
+      <select name="canton" id="canton">
+      <option value="quito">Quito</option>
+      <option value="losbancos">Los Bancos</option>
+      <option value="rumi">Rumiñahui</option>
+      <option value="pedrom">Pedro Moncayo;</option>
+      <option value="mejia">Mejía</option>
+      <option value="cayambe">Cayambe</option>
+      <option value="pedrov">Pedro Vicente Maldonado</option>
+      </select></p>
+    <p><input type="button" name="enviar" id="enviar" value="ENVIAR DATOS" disabled></p>
+  </fieldset>
+  <div id="mostarform" style="display: none;">
+      <fieldset>
+        <legend>INFORMACION CONFIDENCIAL</legend>
+        <p><label for="codigo">Codigo Postal: </label>
+          <input type="text" name="codigo" id="codigo" /></p>
+        <p><label for="referencia">Referencia de la Direccion: </label></p>
+        <p><textarea name="referencia" id="referencia" cols="45" rows="5"></textarea></p>
+        <p><input type="button" name="guardar" id="guardar" value="Guardar" /></p>
+      </fieldset>
+    </div>
+</form>
+<script src="../js/form1.js"></script>
+</body>
+</html>
